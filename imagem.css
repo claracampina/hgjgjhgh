@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* Reset de margem e padding para garantir que não haja espaçamento indesejado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo um estilo básico para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Definindo o estilo do nav */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do header */
+header picture img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Utilizando flexbox para alinhar as imagens lado a lado */
+section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas, caso necessário */
+    justify-content: space-around; /* Espaçamento uniforme entre as imagens */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
+}
+
+/* Estilo para cada artigo (imagem) */
+article {
+    flex: 1 1 200px; /* As imagens terão um tamanho flexível, com mínimo de 200px de largura */
+    max-width: 300px; /* Limite de largura para cada imagem */
+    display: flex;
+    justify-content: center; /* Alinha as imagens no centro do artigo */
+}
+
+/* Garantir que as imagens não ultrapassem o tamanho do contêiner */
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordas arredondadas */
+}
